@@ -1,0 +1,46 @@
+{
+    "common": 
+    {
+        "integration_title": "Grid Energy Information for eso.lt"
+    },
+    "config": 
+    {
+        "flow_title": "Setup eso.lt",
+        "config_credentials_title": "API Credentials for eso.lt",
+        "config_credentials_description": "Your credentials for the eso.lt web service",
+        "config_data_api_url": "API URL",
+        "config_data_api_key": "API Key",        
+        "error": 
+        {
+            "cannot_connect": "Failed to connect"      
+        },
+        "step": 
+        {
+            "user": 
+            {
+                "title": "API Credentials for eso.lt",
+                "description": "Your credentials for the eso.lt web service",
+                "data": 
+                {
+                    "api_url": "API URL",
+                    "api_key": "API Key"
+                }
+            },
+            "reconfigure":
+            {
+                "title": "API Credentials for eso.lt",
+                "description": "Your credentials for the eso.lt web service",
+                "reconfigure_successful": "Setup updated successfully.",
+                "data": 
+                {
+                    "api_url": "API URL",
+                    "api_key": "API Key"
+                }
+            }
+        },
+        "abort": 
+        {
+            "already_configured": "Device is already configured"
+        }
+    }
+}

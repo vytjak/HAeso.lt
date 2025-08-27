@@ -1,0 +1,14 @@
+{
+  "domain": "HAeso_lt",  
+  "name": "Energy Grid Information from eso.lt",
+  "integration_type": "hub",
+  "codeowners": [
+    "@vytjak"
+  ],
+  "config_flow": true,
+  "single_config_entry": true,
+  "documentation": "https://github.com/vytjak/HAeso.lt",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/vytjak/HAeso.lt/issues",
+  "version": "0.1.0"
+}

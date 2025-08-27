@@ -1,0 +1,47 @@
+{
+    "common": 
+    {
+        "integration_title": "Grid Energy Information for eso.lt"
+    },
+    "config": {
+        "flow_title": "Setup eso.lt",
+        "config_credentials_title": "API Credentials for eso.lt",
+        "config_credentials_description": "Your credentials for the eso.lt web service",
+        "config_data_api_url": "API URL",
+        "config_data_api_key": "API Key",
+        "step": 
+        {
+            "user": 
+            {
+                "title": "API Credentials for eso.lt",
+                "description": "Your credentials for the eso.lt web service",
+                "data": 
+                {
+                    "api_url": "[%key:common::config_flow::data::config_data_api_url%]",
+                    "api_key": "[%key:common::config_flow::data::config_data_api_key%]"                    
+                }                            
+            },
+            "reconfigure": 
+            {
+                "title": "[%key:component::HAeso_lt::common::config_credentials_title%]",
+                "description": "[%key:component::HAeso_lt::config_flow::config_credentials_description%]",
+                "reconfigure_successful": "Setup updated successfully.",
+                "data": 
+                {
+                    "api_url": "[%key:common::config_flow::config_data_api_url%]",
+                    "api_key": "[%key:common::config_flow::data::api_key%]"                    
+                }                            
+            }
+        },
+        "abort": 
+        {
+            "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+        },
+        "error": 
+        {
+            "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+            "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+            "unknown": "[%key:common::config_flow::error::unknown%]"
+        }        
+    }    
+}

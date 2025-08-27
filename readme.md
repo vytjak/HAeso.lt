@@ -1,6 +1,6 @@
 # HAeso.lt
 
-Home Assistant integration for mano.eso.lt - Lithuanian electrical energy grid operator.
+Home Assistant integration for mano.eso.lt - Lithuanian energy grid operator.
 
 ## Description
 
@@ -9,28 +9,33 @@ Available details depends on the user having modern consumption meters installed
 
 ## Getting Started
 
-Requires permissions from eso.lt to use the API.
+Requires permissions from eso.lt to use the API. It's up to the user to request access to it.
 
 API definition, application form to use and subscription terms can be found here:
 https://www.eso.lt/web/verslui/elektra/kitos-paslaugos/web-service-api/3945.
 
-### Dependencies
-
-* TODO: 
-* TODO: 2
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* The integration requires HACS add-on for installation. 
+  Please refer to HACS documentation for additional details: https://hacs.xyz/docs/use/
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Setup
+  * Access key for the API
+  * URL for the API
+
 ```
 code blocks for commands
 ```
+
+## TO DO
+
+* Everything!!! 
+    * MVP client for consumed data
+    * Make everything configurable via UI
+    * ...
 
 ## Help
 
@@ -40,7 +45,7 @@ Refer to github project page: https://github.com/vytjak/HAeso.lt
 
 Contributors names and contact info
 
-Vytenis Jakas
+### Vytenis Jakas
 
 
 ## Version History
@@ -50,11 +55,12 @@ Vytenis Jakas
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [licence.md](licence.md) file for details
 
-## Acknowledgments
+## Final Thoughts
 
-Inspiration, code snippets, etc.
-* 
-* 
-* 
+Developing with Python is like painting with shit. 
+The least you could do for me for enduring this torture, is buy me a beer!
+
+
+
