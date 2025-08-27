@@ -9,15 +9,11 @@ Available details depends on the user having modern consumption meters installed
 
 ## Getting Started
 
-Requires permissions from eso.lt to use the API.
+Requires permissions from eso.lt to use the API. It's up to the user to request access to it.
 
 API definition, application form to use and subscription terms can be found here:
 https://www.eso.lt/web/verslui/elektra/kitos-paslaugos/web-service-api/3945.
 
-### Dependencies
-
-* TODO: 
-* TODO: 2
 
 ### Installing
 
@@ -32,6 +28,13 @@ https://www.eso.lt/web/verslui/elektra/kitos-paslaugos/web-service-api/3945.
 code blocks for commands
 ```
 
+## TO DO
+
+* Everything!!! 
+    * MVP client for consumed data
+    * Make everything configurable via UI
+    * ...
+
 ## Help
 
 Refer to github project page: https://github.com/vytjak/HAeso.lt
@@ -40,7 +43,7 @@ Refer to github project page: https://github.com/vytjak/HAeso.lt
 
 Contributors names and contact info
 
-Vytenis Jakas
+### Vytenis Jakas
 
 
 ## Version History
@@ -50,11 +53,11 @@ Vytenis Jakas
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [licence.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+
 * 
 * 
 * 
