@@ -53,7 +53,7 @@ Contributors names and contact info
 
 ## License
 
-This project is licensed under the MIT License - see the [licence.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [licence](licence.md) file for details
 
 ## Acknowledgments
 
