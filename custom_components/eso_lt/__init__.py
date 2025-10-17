@@ -12,8 +12,8 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.loader import async_get_loaded_integration
 
 from .const import DOMAIN, LOGGER
-# from .api_client import EsoLtApiClient
-# from .coordinator import EsoLtDataUpdateCoordinator
+from .api_client import EsoLtApiClient
+from .coordinator import EsoLtDataUpdateCoordinator
 from .data import EsoLtConfigEntry#, EsoLtData
 
 if TYPE_CHECKING:
@@ -32,12 +32,12 @@ async def async_setup_entry(
     """Set up this integration using UI."""
 
     #!!!
-    # coordinator = EsoLtDataUpdateCoordinator(
-    #     hass=hass,
-    #     logger=LOGGER,
-    #     name=DOMAIN,
-    #     update_interval=timedelta(hours=1),
-    # )
+    coordinator = EsoLtDataUpdateCoordinator(
+        hass=hass,
+        logger=LOGGER,
+        name=DOMAIN,
+        update_interval=timedelta(hours=1),
+    )
     # entry.runtime_data = EsoLtData(
     #     client=EsoLtApiClient(
     #         username=entry.data[CONF_USERNAME],

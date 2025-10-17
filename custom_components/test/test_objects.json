@@ -1,0 +1,51 @@
+[
+    {
+        "consumption": {
+            "consumptionState": "string",
+            "consumptionStateFrom": "string",
+            "consumptionStateTo": "string"
+        },
+        "contract": {
+            "consumerCode": "string",
+            "contractEnd": "string",
+            "contractModel": "string",
+            "contractStart": "string",
+            "contractType": "string",
+            "independentSupplier": "string",
+            "personCode": "string",
+            "personName": "string"
+        },
+        "generatingObject": [
+            {
+                "generatingObjectType": "string",
+                "generatingObjectTypeFrom": "string",
+                "generatingObjectTypeTo": "string",
+                "payoffMethod": "string",
+                "powerPlantType": "string"
+            }
+        ],
+        "metersQty": 0,
+        "objectAddress": "string",
+        "objectId": "TEST_OBJ01",
+        "objectName": "TEST Object 01",
+        "objectNumber": "string",
+        "objectType": "string",
+        "permissiblePowerConsumption": 0,
+        "permissiblePowerGeneration": 0,
+        "productsQty": 0,
+        "scalesQty": 0,
+        "smartMeterInstallationDate": "string",
+        "supply": {
+            "supplyState": "string",
+            "supplyStateFrom": "string",
+            "supplyStateTo": "string"
+        },
+        "tariff": {
+            "tariffPlan": "string",
+            "tariffPlanChangeDate": "string",
+            "timeZone": "string"
+        },
+        "technologicalCosts": "boolean",
+        "voltage": 0
+    }
+]

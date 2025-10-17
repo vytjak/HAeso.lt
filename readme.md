@@ -2,6 +2,13 @@
 
 Home Assistant integration for mano.eso.lt - Lithuanian energy grid operator.
 
+**Disclaimer.** 
+
+*WARNING: If you're reading this, you have stumbled upon this project before it is ready to release :). Please wait until this message is removed.* 
+
+This Home Assistant integration for eso.lt is a work in progress, so some missing functionality and occasional errors should be expected.
+If you'll encounter something that's obviously a bug, please submit it as an issue on the GitHub repo (link bellow).
+
 ## Description
 
 Pulls in electrical energy consumption data from Lithuanian energy grid operator eso.lt. 
@@ -61,6 +68,5 @@ This project is licensed under the MIT License - see the [licence.md](licence.md
 
 Developing with Python is like painting with shit. 
 The least you could do for me for enduring this torture, is buy me a beer!
-
 
 

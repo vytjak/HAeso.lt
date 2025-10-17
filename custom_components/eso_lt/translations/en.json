@@ -6,6 +6,7 @@
     "config": 
     {
         "flow_title": "Setup eso.lt",
+        "reconfigure_successful": "Setup updated successfully",
         "config_credentials_title": "API Credentials for eso.lt",
         "config_credentials_description": "Your credentials for the eso.lt web service",
         "config_data_api_url": "API URL",
@@ -29,8 +30,7 @@
             "reconfigure":
             {
                 "title": "API Credentials for eso.lt",
-                "description": "Your credentials for the eso.lt web service",
-                "reconfigure_successful": "Setup updated successfully.",
+                "description": "Your credentials for the eso.lt web service",                
                 "data": 
                 {
                     "api_url": "API URL",

@@ -45,8 +45,35 @@ class EsoLtApiClient:
             request_dt_text = request_dt.astimezone().isoformat()
             request_url = self._base_url + API_CLIENT_OBJECTS.format(request_dt_text)            
             logMan.info(f'Testing API connection to: {request_url}')
-            logMan.info(f'Authorization: {auth_value}')
-            logMan.info(f'Headers: {repr(headers)}')
+            logMan.debug(f'Authorization: {auth_value}')
+            logMan.debug(f'Headers: {repr(headers)}')
+            async with timeout(10):
+                response = await cs.get(request_url, headers=headers)
+            if (response.status == 401):
+                raise(EsoLtApiClientAuthenticationError)
+            #!!!elif (response.status)
+            response.raise_for_status()
+            return True
+                                    
+        except Exception as exception:  # pylint: disable=broad-except
+             msg = f"Something really wrong happened! - {exception}"
+             raise EsoLtApiClientError(
+                 msg,
+             ) from exception
+    
+async def get_objects(
+        self
+    ) -> Any:
+        """Retrieve object list for the account"""
+        try:
+            logMan = logging.getLogger(__name__)            
+            cs = self._session
+            auth_value = f'api-key" {self._api_key}'
+            headers = {'api-key': self._api_key, 'X-B3-TraceId': uuid.uuid4().hex}
+            request_dt = datetime(2000, 1, 1, 0, 0, 0)  #TODO: maybe switch to today()?
+            request_dt_text = request_dt.astimezone().isoformat()
+            request_url = self._base_url + API_CLIENT_OBJECTS.format(request_dt_text)            
+            logMan.info(f'Retrieving objects: {request_url}')
             async with timeout(10):
                 response = await cs.get(request_url, headers=headers)
             if (response.status == 401):
@@ -60,8 +87,8 @@ class EsoLtApiClient:
              raise EsoLtApiClientError(
                  msg,
              ) from exception    
-        
     
+
     
 #     async def async_get_data(self) -> Any:
 #         #Get data from the API.
